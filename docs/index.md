@@ -1,9 +1,9 @@
 ![logo do projeto](assets/logo.png){ width="300" .center }
 # Notas musicais
 
-Notas musicais é um CLI para ajudar na formação de escalas e acordes
+Notas musicais é um CLI para ajudar na formação de escalas, acordes e campos harmônicos
 
-Temos dois comandos diponíveis: `escala` e `acorde`
+Temos dois comandos diponíveis: `escala`, `acorde` e `campo-harmonico`
 ## Como usar?
 
 ### Escalas
@@ -78,6 +78,55 @@ poetry run notas-musicais acorde C+
 ```
 Até o momento você pode usar acordes maiores, menores, diminutos, aumentads.
 
+## Campo Harmônico
+Você pode chamar os campos harmônicos via o subcomando `campo-harmonico`. Por exemplo:
+
+```bash
+notas-musicais campo-harmonico
+┏━━━┳━━━━┳━━━━━┳━━━━┳━━━┳━━━━┳━━━━━━┓
+┃ I ┃ ii ┃ iii ┃ IV ┃ V ┃ vi ┃ vii° ┃
+┡━━━╇━━━━╇━━━━━╇━━━━╇━━━╇━━━━╇━━━━━━┩
+│ C │ Dm │ Em  │ F  │ G │ Am │ B°   │
+└───┴────┴─────┴────┴───┴────┴──────┘
+```
+
+Por padrão os parâmentros utilizados são a tônica `C` e a tonalidade `maior`
+
+### Alterações nos campos harmônicos
+
+Você pode alterar os parâmentros da tônica e da tonalidade.
+
+```bash
+notas-musicais campo-harmonio [OPTIONS] [TONICA] [TONALIDADE]
+```
+#### Alteração na tônica do campo harmônico
+
+Um exemplo com o campo hamônico de `E`
+
+```bash
+notas-musicais campo-harmonio E
+
+┏━━━┳━━━━━┳━━━━━┳━━━━┳━━━┳━━━━━┳━━━━━━┓
+┃ I ┃ ii  ┃ iii ┃ IV ┃ V ┃ vi  ┃ vii° ┃
+┡━━━╇━━━━━╇━━━━━╇━━━━╇━━━╇━━━━━╇━━━━━━┩
+│ E │ F#m │ G#m │ A  │ B │ C#m │ D#°  │
+└───┴─────┴─────┴────┴───┴─────┴──────┘
+```
+
+#### Alteração da tonalidade do campo
+
+Um exemplo com o campo hamônico de `E` na tonalidade `menor`
+
+```bash
+notas-musicais campo-harmonio E menor
+
+┏━━━━┳━━━━━┳━━━━━┳━━━━┳━━━━┳━━━━┳━━━━━┓
+┃ i  ┃ ii° ┃ III ┃ iv ┃ v  ┃ VI ┃ VII ┃
+┡━━━━╇━━━━━╇━━━━━╇━━━━╇━━━━╇━━━━╇━━━━━┩
+│ Em │ F#° │ G   │ Am │ Bm │ C  │ D   │
+└────┴─────┴─────┴────┴────┴────┴─────┘
+```
+
 ## Mais infromações sobre o CLI
 
 Para descobrir outras opções, você pode usar a flag '--help'
@@ -102,7 +151,8 @@ Usage: notas-musicais [OPTIONS] COMMAND [ARGS]...
 │ --help                                                       Show this message and exit.            │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ╭─ Commands ──────────────────────────────────────────────────────────────────────────────────────────╮
-│ acorde                                                                                              │
+│ acorde 
+│ campo-harmonico
 │ escala                                                                                              │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
