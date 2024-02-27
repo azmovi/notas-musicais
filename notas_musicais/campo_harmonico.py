@@ -1,3 +1,6 @@
+"""
+Módulo responsável pela criação de campos harmônicos.
+"""
 from notas_musicais.acordes import triade
 from notas_musicais.escalas import escala
 
