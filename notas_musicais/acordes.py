@@ -6,7 +6,7 @@ def _menor(cifra):
     notas = triade(nota, 'menor')
 
     if '+' in cifra:
-        tonica, terca, quinta = notas
+        _, _, quinta = notas
         notas.pop()
         notas.append(semitom(quinta, intervalo=1))
         graus = ['I', 'III-', 'V+']

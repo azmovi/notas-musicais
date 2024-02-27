@@ -10,6 +10,8 @@ Temos dois comandos diponíveis: `escala`, `acorde` e `campo-harmonico`
 
 Você pode chamar as escalas via linha de comando. Por exemplo:
 
+{{commands.run}}
+
 ```bash
 poetry run notas-musicais escala
 ```

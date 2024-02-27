@@ -16,9 +16,15 @@ extra_css:
 
 watch:
   - notas_musicais
+
 plugins:
+- macros
 - mkdocstrings:
+    default_handler: python
     handlers:
       python:
         paths: [notas_musicais]
 
+extra:
+  commands:
+    run: poetry run notas-musicais
