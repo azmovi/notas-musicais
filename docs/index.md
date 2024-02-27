@@ -1,19 +1,23 @@
-![logo do projeto](assets/logo.png){ width="300" .center }
+![logo do projeto](assets/logo.png){ width="300" .center}
 # Notas musicais
 
 Notas musicais é um CLI para ajudar na formação de escalas, acordes e campos harmônicos
 
 Temos dois comandos diponíveis: `escala`, `acorde` e `campo-harmonico`
+
+{% include "templates/cards.html" %}
+
+{% include "templates/instalacao.md" %}
+
 ## Como usar?
 
 ### Escalas
 
 Você pode chamar as escalas via linha de comando. Por exemplo:
 
-{{commands.run}}
 
 ```bash
-poetry run notas-musicais escala
+{{ commands.run }} notas-musicais escala
 ```
 Retornando os graus e as notas correspondentes a essa escala:
 
@@ -30,7 +34,7 @@ Retornando os graus e as notas correspondentes a essa escala:
 O primeiro parâmentro do CLI é a tônica da escala que deseja exibir. Desta forma, você pode alterar a escala retornada. Por exemplo, a escala 'F#':
 
 ```bash
-poetry run notas-musicais escala F#
+{{ commands.run }} notas-musicais escala F#
 ```
 Resultado em: 
 ```
@@ -44,7 +48,7 @@ Resultado em:
 #### Alteração na tonalidade da escala
 Você pode alterar a tonalidade da escala também! Esse é o segundo parâmentro da linha de comando. Por exemplo, a escala 'D#' maior:
 ```bash
-poetry run notas-musicais escala D# maior 
+{{ commands.run }} notas-musicais escala D# maior 
 ```
 Resultado em:
 ```
@@ -60,7 +64,7 @@ Resultado em:
 Uso básico
 
 ```bash
-poetry run notas-musicais acorde
+{{ commands.run }} notas-musicais acorde
 ┏━━━┳━━━━━┳━━━┓
 ┃ I ┃ III ┃ V ┃
 ┡━━━╇━━━━━╇━━━┩
@@ -71,7 +75,7 @@ poetry run notas-musicais acorde
 ### Variações na cifra
 
 ```bash
-poetry run notas-musicais acorde C+
+{{ commands.run }} notas-musicais acorde C+
 ┏━━━┳━━━━━┳━━━━┓
 ┃ I ┃ III ┃ V+ ┃
 ┡━━━╇━━━━━╇━━━━┩
@@ -134,7 +138,7 @@ notas-musicais campo-harmonio E menor
 Para descobrir outras opções, você pode usar a flag '--help'
 
 ```bash
-poetry run notas-musicais --help
+{{ commands.run }} notas-musicais --help
 
 ```
 
