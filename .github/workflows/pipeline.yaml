@@ -6,8 +6,26 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Roda um comando!
-        run: echo $(pwd)
+      - name: Copia os arquivos
+        uses: actions/checkout@v3
 
-      - name: Roda outro comando! 
-        run: echo $(ls)
+      - name: Instalar o python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11.7'
+
+      - name: Instalar o poetry
+        run: pip install poetry
+
+      - name: Instalar depedencias do projeto
+        run: poetry install --without doc
+
+      - name: Rodar os testes
+        run: poetry run task test --cov-report=xml
+
+      - name: Subir cobertura para o codecov
+        uses: codecov/codecov-action@v3
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+
+
