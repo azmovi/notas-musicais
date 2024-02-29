@@ -13,6 +13,7 @@ build:
       - pip install poetry
       - poetry config virtualenvs.create false
       - python -m pip install --upgrade --no-cache-dir mkdocs-material
+      - python -m pip install --upgrade --no-cache-dir mkdocs-macros-plugin
 
     post_install:
       - poetry install --only doc
