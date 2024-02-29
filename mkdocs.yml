@@ -1,39 +1,37 @@
-site_name: Notas Musicais
+site_name: Notas musicais
 repo_url: https://github.com/azmovi
 repo_name: azmovi/notas-musicais
 edit_uri: tree/main/docs
 
-theme: 
+theme:
   name: material
   language: pt-BR
   logo: assets/logo.png
-  favico: assets/logo.png
+  favicon: assets/logo.png
 
 markdown_extensions:
   - attr_list
   - admonition
-    #- pymdownx.tasklist
+  - pymdownx.tasklist
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji 
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
-    #- pymdownx.superfences:
-    #custom_fences:
-    #- name: mermaid
-    #class: mermaid
-    #format: !!python/name:pymdownx.superfences.fence_code_format
-
-            #- pymdownx.emoji:
-            #emoji_index: !!python/name:material.extensions.emoji.twemoji 
-            #emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 extra_css:
   - stylesheets/extra.css
 
 watch:
-  - notas_musicais
+   - notas_musicais
 
 plugins:
 - macros
 - mkdocstrings:
-    default_handler: python
     handlers:
       python:
         paths: [notas_musicais]
