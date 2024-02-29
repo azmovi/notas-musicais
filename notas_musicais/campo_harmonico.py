@@ -5,7 +5,7 @@ from notas_musicais.acordes import triade
 from notas_musicais.escalas import escala
 
 
-def _triade_na_escala(nota: str, notas_da_escala) -> str:
+def _triade_na_escala(nota, notas_da_escala):
     """
     Saber se as notas de um acorde estão na escala
 
@@ -31,7 +31,7 @@ def _triade_na_escala(nota: str, notas_da_escala) -> str:
     return resposta
 
 
-def _converte_graus(cifra: str, grau: str) -> str:
+def _converte_graus(cifra, grau):
     """
     Converte o grau relativo a cifra
 

@@ -22,7 +22,7 @@ def _menor(cifra):
     return notas, graus
 
 
-def semitom(nota, *, intervalo):
+def semitom(nota: str, *, intervalo: int) -> str:
     """
     Calcula a distância em semitons para uma outra nota usando intervalos.
 
@@ -44,7 +44,7 @@ def semitom(nota, *, intervalo):
     return NOTAS[pos % 12]
 
 
-def triade(nota, tonalidade):
+def triade(nota: str, tonalidade: str) -> list[str]:
     """
     Gera triades a partir de uma tônica e uma tonalidade.
 

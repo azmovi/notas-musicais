@@ -5,6 +5,15 @@ description = ""
 authors = ["azmovi <azevedoantoniocicero@gmail.com>"]
 readme = "README.md"
 packages = [{include = "notas_musicais"}]
+classifiers = [
+    "Topic :: Education",
+    "Environment :: Console",
+    "Natural Language :: Portuguese (Brazilian)",
+    "Development Status :: 5 - Production/Stable",
+    "Programming Language :: Python :: 3.11"
+]
+
+# [tool.poetry.urls]
 
 [tool.poetry.scripts]
 notas-musicais = "notas_musicais.cli:app"
