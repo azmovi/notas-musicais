@@ -15,12 +15,6 @@ extra_css:
 watch:
    - notas_musicais
 
-plugins:
-- mkdocstrings:
-    handlers:
-      python:
-        paths: [notas_musicais]
-
 extra:
   commands:
     run: notas-musicais
