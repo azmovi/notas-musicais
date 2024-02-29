@@ -518,17 +518,6 @@ files = [
 ]
 
 [[package]]
-name = "material"
-version = "0.1"
-description = "UNKNOWN"
-category = "dev"
-optional = false
-python-versions = "*"
-files = [
-    {file = "material-0.1.tar.gz", hash = "sha256:99a6a68527b0faff78d9ae85d3838d7eb350922f8b15d536945c515cd8418c42"},
-]
-
-[[package]]
 name = "mccabe"
 version = "0.6.1"
 description = "McCabe checker, plugin for flake8"
@@ -597,14 +586,14 @@ min-versions = ["babel (==2.9.0)", "click (==7.0)", "colorama (==0.4)", "ghp-imp
 
 [[package]]
 name = "mkdocs-autorefs"
-version = "1.0.0"
+version = "1.0.1"
 description = "Automatically link across pages in MkDocs."
 category = "dev"
 optional = false
 python-versions = ">=3.8"
 files = [
-    {file = "mkdocs_autorefs-1.0.0-py3-none-any.whl", hash = "sha256:2b6d288f0582589d1be7c99ce4470c8e7c5077892014051ff0d4ff574a73dbe8"},
-    {file = "mkdocs_autorefs-1.0.0.tar.gz", hash = "sha256:1b20db41cade632b07b7a73dee818977b52e869c9deb438f6f20e2896ff01859"},
+    {file = "mkdocs_autorefs-1.0.1-py3-none-any.whl", hash = "sha256:aacdfae1ab197780fb7a2dac92ad8a3d8f7ca8049a9cbe56a4218cd52e8da570"},
+    {file = "mkdocs_autorefs-1.0.1.tar.gz", hash = "sha256:f684edf847eced40b570b57846b15f0bf57fb93ac2c510450775dcf16accb971"},
 ]
 
 [package.dependencies]
@@ -1305,4 +1294,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "129009346fc43d0579a3fc691a91b4924d3b8187dbcddfeb95c586b308449eca"
+content-hash = "e37391c2db64c57ab9c745d1c768871733d024ddb08c753dfdb24e330de3dc5a"
