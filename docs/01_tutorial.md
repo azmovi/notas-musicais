@@ -219,4 +219,4 @@ atualizações. Então consultar o `--help` é uma boa maneira de se manter atua
 Caso tenha encontrado algum erro no tutorial ou deseje melhorar seu texto. 
 Fique a vontade para contribuir com o projeto no link a seguir.
 
-[Como contribuir com o projeto?](/02_contribua/)
+[Como contribuir com o projeto?](02_contribua.md)
