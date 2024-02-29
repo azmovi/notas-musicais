@@ -410,7 +410,7 @@ i18n = ["Babel (>=2.7)"]
 name = "markdown"
 version = "3.5.2"
 description = "Python implementation of John Gruber's Markdown."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -873,7 +873,7 @@ windows-terminal = ["colorama (>=0.4.6)"]
 name = "pymdown-extensions"
 version = "10.7"
 description = "Extension pack for Python Markdown."
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.8"
 files = [
@@ -949,7 +949,7 @@ six = ">=1.5"
 name = "pyyaml"
 version = "6.0.1"
 description = "YAML parser and emitter for Python"
-category = "main"
+category = "dev"
 optional = false
 python-versions = ">=3.6"
 files = [
@@ -1295,4 +1295,4 @@ watchmedo = ["PyYAML (>=3.10)"]
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "bf752bfb0dc1e29a9cb8a47b83aed9802f07fe92ae0f32dfc037f455550533f5"
+content-hash = "bdee84b3e28577974fe92b10e577b872c73be7e50a21499c14f20766b3fb2b74"
