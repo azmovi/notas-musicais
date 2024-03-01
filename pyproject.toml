@@ -13,7 +13,10 @@ classifiers = [
     "Programming Language :: Python :: 3.11"
 ]
 
-# [tool.poetry.urls]
+[tool.poetry.urls]
+"Documentação" = "https://notas-musicais-azevedo.readthedocs.io/pt/latest/"
+"Código" = "https://github.com/azmovi/notas-musicais"
+"Bug Tracker" = "https://github.com/azmovi/notas-musicais/issues"
 
 [tool.poetry.scripts]
 notas-musicais = "notas_musicais.cli:app"
