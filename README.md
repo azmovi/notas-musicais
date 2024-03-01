@@ -182,3 +182,7 @@ Usage: notas-musicais [OPTIONS] COMMAND [ARGS]...
 │ escala                                                                                              │
 ╰─────────────────────────────────────────────────────────────────────────────────────────────────────╯
 ```
+
+### Agredecimento
+Agradecimentos especiais ao @dunossauro por ter feito esse curso gratuito para
+a comunidade de python
