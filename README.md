@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
   <img src="https://notas-musicais-azevedo.readthedocs.io/pt/latest/assets/logo.png" alt="Logo notas musicais" width="20%">
 </p>
 
@@ -7,6 +7,7 @@
 [![Documentation Status](https://readthedocs.org/projects/notas-musicais-azevedo/badge/?version=latest)](https://notas-musicais-azevedo.readthedocs.io/pt/latest/?badge=latest)
 [![codecov](https://codecov.io/gh/azmovi/notas-musicais/graph/badge.svg?token=2S97895YU9)](https://codecov.io/gh/azmovi/notas-musicais)
 ![CI](https://github.com/azmovi/notas-musicais/actions/workflows/pipeline.yaml/badge.svg)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Notas musicais é um CLI para ajudar na formação de escalas, acordes e campos harmônicos
 
