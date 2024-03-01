@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "notas-musicais"
+name = "notas-musicais-az"
 version = "0.1.0"
 description = "Notas musicais é um CLI para ajudar na formação de escalas, acordes e campos harmônicos. Baseado no repo do @dunossauro"
 license = "MIT"

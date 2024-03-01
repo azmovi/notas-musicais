@@ -38,4 +38,4 @@ plugins:
 
 extra:
   commands:
-    run: notas-musicais
+    run: notas-musicais-az
