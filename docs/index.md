@@ -17,7 +17,7 @@ Você pode chamar as escalas via linha de comando. Por exemplo:
 
 
 ```bash
-{{ commands.run }} notas-musicais escala
+{{ commands.run }}  escala
 ```
 Retornando os graus e as notas correspondentes a essa escala:
 
@@ -34,7 +34,7 @@ Retornando os graus e as notas correspondentes a essa escala:
 O primeiro parâmentro do CLI é a tônica da escala que deseja exibir. Desta forma, você pode alterar a escala retornada. Por exemplo, a escala 'F#':
 
 ```bash
-{{ commands.run }} notas-musicais escala F#
+{{ commands.run }}  escala F#
 ```
 Resultado em: 
 ```
@@ -48,7 +48,7 @@ Resultado em:
 #### Alteração na tonalidade da escala
 Você pode alterar a tonalidade da escala também! Esse é o segundo parâmentro da linha de comando. Por exemplo, a escala 'D#' maior:
 ```bash
-{{ commands.run }} notas-musicais escala D# maior 
+{{ commands.run }}  escala D# maior 
 ```
 Resultado em:
 ```
@@ -64,7 +64,7 @@ Resultado em:
 Uso básico
 
 ```bash
-{{ commands.run }} notas-musicais acorde
+{{ commands.run }}  acorde
 ┏━━━┳━━━━━┳━━━┓
 ┃ I ┃ III ┃ V ┃
 ┡━━━╇━━━━━╇━━━┩
@@ -75,7 +75,7 @@ Uso básico
 ### Variações na cifra
 
 ```bash
-{{ commands.run }} notas-musicais acorde C+
+{{ commands.run }}  acorde C+
 ┏━━━┳━━━━━┳━━━━┓
 ┃ I ┃ III ┃ V+ ┃
 ┡━━━╇━━━━━╇━━━━┩
@@ -88,7 +88,7 @@ Até o momento você pode usar acordes maiores, menores, diminutos, aumentads.
 Você pode chamar os campos harmônicos via o subcomando `campo-harmonico`. Por exemplo:
 
 ```bash
-notas-musicais campo-harmonico
+ campo-harmonico
 ┏━━━┳━━━━┳━━━━━┳━━━━┳━━━┳━━━━┳━━━━━━┓
 ┃ I ┃ ii ┃ iii ┃ IV ┃ V ┃ vi ┃ vii° ┃
 ┡━━━╇━━━━╇━━━━━╇━━━━╇━━━╇━━━━╇━━━━━━┩
@@ -103,14 +103,14 @@ Por padrão os parâmentros utilizados são a tônica `C` e a tonalidade `maior`
 Você pode alterar os parâmentros da tônica e da tonalidade.
 
 ```bash
-notas-musicais campo-harmonio [OPTIONS] [TONICA] [TONALIDADE]
+ campo-harmonio [OPTIONS] [TONICA] [TONALIDADE]
 ```
 #### Alteração na tônica do campo harmônico
 
 Um exemplo com o campo hamônico de `E`
 
 ```bash
-notas-musicais campo-harmonio E
+ campo-harmonio E
 
 ┏━━━┳━━━━━┳━━━━━┳━━━━┳━━━┳━━━━━┳━━━━━━┓
 ┃ I ┃ ii  ┃ iii ┃ IV ┃ V ┃ vi  ┃ vii° ┃
@@ -124,7 +124,7 @@ notas-musicais campo-harmonio E
 Um exemplo com o campo hamônico de `E` na tonalidade `menor`
 
 ```bash
-notas-musicais campo-harmonio E menor
+ campo-harmonio E menor
 
 ┏━━━━┳━━━━━┳━━━━━┳━━━━┳━━━━┳━━━━┳━━━━━┓
 ┃ i  ┃ ii° ┃ III ┃ iv ┃ v  ┃ VI ┃ VII ┃
@@ -138,13 +138,13 @@ notas-musicais campo-harmonio E menor
 Para descobrir outras opções, você pode usar a flag '--help'
 
 ```bash
-{{ commands.run }} notas-musicais --help
+{{ commands.run }}  --help
 
 ```
 
 Resultado em:
 ```bash
-Usage: notas-musicais [OPTIONS] COMMAND [ARGS]...                                                     
+Usage:  [OPTIONS] COMMAND [ARGS]...                                                     
                                                                                                        
 ╭─ Options ───────────────────────────────────────────────────────────────────────────────────────────╮
 │ --install-completion        [bash|zsh|fish|powershell|pwsh]  Install completion for the specified   │
